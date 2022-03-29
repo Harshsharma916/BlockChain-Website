@@ -1,0 +1,30 @@
+.table {
+  width: 150%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(100px);
+  transform: rotate(-90deg);
+  padding: 25px 0px;
+  position: fixed;
+  right:23%;
+}
+
+.handler{
+  display: flex;
+  gap: 15px;
+  margin-left: 31%;
+  align-items: center;
+
+  .text{
+    margin: 0px;
+    font-size: 24px;
+    color: white;
+  }
+
+  .hamburger{
+    transform: rotate(90deg);
+    color: white;
+    width: 40px;
+    height: 40px;
+  }
+}
+

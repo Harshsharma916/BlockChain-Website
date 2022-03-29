@@ -1,0 +1,53 @@
+.mainContStyle {
+  display: "flex";
+  flex-direction: "column";
+  gap: 100px;
+  margin-left: 9%;
+  height: 100vh;
+}
+
+.mainHeading{
+  color: white;
+  margin: 0px;
+  font-family: "Oswald", sans-serif;
+  font-size: 54px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  height: 90%;
+  width: 85vw;
+  overflow-x: auto;
+  gap: 24px;
+
+  .subContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(50px);
+    
+    .heading {
+      margin: 0px;
+      width: 38vw;
+      font-size: 48px;
+      color: #d4088c;
+      font-family: "Oswald", sans-serif;
+    }
+    
+    .info {
+      margin: 0px;
+      font-size: 25px;
+      font-weight: 100;
+      color: white;
+    }
+  }
+}

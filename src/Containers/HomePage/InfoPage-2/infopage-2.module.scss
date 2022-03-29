@@ -1,0 +1,19 @@
+.mainContStyle {
+  display: flex;
+  padding: 0px 9%;
+  height: 100vh;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  .heading {
+    color: white;
+    margin: 0px;
+    font-family: "Oswald", sans-serif;
+    font-size: 54px;
+  }
+}
