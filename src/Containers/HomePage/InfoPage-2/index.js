@@ -5,7 +5,7 @@ const InfoPage2 = () => {
   return (
     <div className={style.mainContStyle}>
       <div className={style.container}>
-        <p className={style.heading}></p>
+        <p className={style.heading}>Transaction Process</p>
         <img src={transactionImg} className={style.img} />
       </div>
     </div>

@@ -35,49 +35,64 @@ export function horizontalScroll() {
 
     var windowPosition = window.pageYOffset;
     var windowWidth = window.innerWidth;
+    var windowHeight = document.body.scrollHeight;
+
+    //thresHold
     var thresHold = 740;
+    var thresHold2 = 800;
+    if (windowWidth < 2000) {
+      thresHold = 750;
+      thresHold2 = 500;
+    }
+    var heightThreshold1 = windowHeight/3 - 100 ;
+    var heightThreshold2 = 2*windowHeight/3 - 300;
+    var heightThreshold3 = windowHeight - 60 ;
 
+    //scrollFunction
     if (windowPosition === 0) {
-      if(windowWidth < 2000){
-        thresHold = 750;
-      }
-
       if (e.deltaY > 0 && containerPosition > thresHold) {
-        window.scrollTo({
-          top: windowPosition + e.deltaY * 8,
-          behavior: "smooth",
-        });
+        windowScroll(e);
       } else {
         container.scrollTo({
           top: 0,
-          left: containerPosition + e.deltaY / 7,
+          left: containerPosition + e.deltaY / 5,
           behaviour: "smooth",
         });
         bgImgContainer.scrollTo({
           top: 0,
-          left: bgImgContainerPosition + e.deltaY / 7,
+          left: bgImgContainerPosition + e.deltaY / 5,
           behaviour: "smooth",
         });
       }
-    } else if(windowPosition>950) {
-      if(infoContainer_1Position === 0 && e.deltaY<0){
-        window.scrollTo({
-          top: windowPosition + e.deltaY * 8,
-          behavior: "smooth",
-        });
-      }else{
+    } else if (windowPosition > heightThreshold1 && windowPosition < heightThreshold2) {
+      // console.log(windowPosition,heightThreshold2);
+      if (infoContainer_1Position === 0 && e.deltaY < 0) {
+        windowScroll(e);
+      } else {
+        if (e.deltaY > 0 && infoContainer_1Position > thresHold2) {
+          windowScroll(e);
+        }
         infoContainer_1.scrollTo({
-          left: infoContainer_1Position + e.deltaY / 7,
+          left: infoContainer_1Position + e.deltaY / 5,
           behaviour: "smooth",
         });
       }
+    } else if(windowPosition > heightThreshold2){
+      windowScroll(e);
     }else{
-      // console.log(windowPosition)
-      window.scrollTo({
-        top: windowPosition + e.deltaY * 8,
-        behavior: "smooth",
-      });
+      windowScroll(e);
     }
   };
+
+
+  //windowScrollFunction
+  function windowScroll(e) {
+    var windowPosition = window.pageYOffset;
+    window.scrollTo({
+      top: windowPosition + e.deltaY * 5,
+      behavior: "smooth",
+    });
+  }
+
   window.addEventListener("wheel", onWheel, { passive: false });
 }

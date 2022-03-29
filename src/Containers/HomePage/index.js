@@ -11,6 +11,7 @@ import { horizontalScroll, useHorizontalScroll } from "./Components/Animate";
 import { content } from "./Components/Content";
 import InfoPage1 from "./InfoPage-1";
 import InfoPage2 from "./InfoPage-2";
+import { RectAnimate } from "../../Components/RectAnimate";
 
 // const Content = styled.div`
 //   position: absolute;
@@ -49,6 +50,12 @@ const Homepage = () => {
         <img src={bgImg} className={style.bgImg} />
         <img src={bgImg1} className={style.bgImg1}/>
         <img className={style.blocksImgbg} src={blocksBg} />
+      </div>
+      <div className={style.rectAnimation1}>
+        <RectAnimate/>
+      </div>
+      <div className={style.rectAnimation2}>
+        <RectAnimate/>
       </div>
       <div className={style.container1} id="container">
         <div className={style.content1}>

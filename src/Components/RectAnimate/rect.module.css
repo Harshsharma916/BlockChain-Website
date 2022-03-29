@@ -1,0 +1,142 @@
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.rect1 {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  z-index: 3;
+  -webkit-animation: rescale 15s infinite;
+  animation: rescale 15s infinite;
+}
+
+.rect2 {
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  z-index: 2;
+  -webkit-animation: rescale 15s infinite;
+  animation: rescale1 15s infinite;
+  width: 65%;
+}
+
+.rect3 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+  -webkit-animation: rescale 15s infinite;
+  animation: rescale 15s infinite;
+  width: 50%;
+}
+
+@-webkit-keyframes rescale {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(334deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rescale {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(334deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rescale1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-30deg);
+  }
+  20% {
+    transform: rotate(-70deg);
+  }
+  30% {
+    transform: rotate(-100deg);
+  }
+  40% {
+    transform: rotate(-140deg);
+  }
+  50% {
+    transform: rotate(-170deg);
+  }
+  60% {
+    transform: rotate(-210deg);
+  }
+  70% {
+    transform: rotate(-240deg);
+  }
+  80% {
+    transform: rotate(-270deg);
+  }
+  90% {
+    transform: rotate(-320deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

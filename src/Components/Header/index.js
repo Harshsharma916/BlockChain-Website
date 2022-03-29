@@ -8,6 +8,7 @@ const Header = () => {
       <div className={style.logodiv}>
         <Scene />
         <p className={style.logotext}>learnBlocks.io</p>
+        <p className={style.currencyCalc}>Currency Calculator</p>
       </div>
     </>
   );
