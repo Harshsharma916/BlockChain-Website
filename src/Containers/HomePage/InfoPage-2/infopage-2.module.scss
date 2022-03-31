@@ -1,19 +1,62 @@
 .mainContStyle {
   display: flex;
-  // padding: 0px 9%;
+  padding: 0px 9%;
   height: 100vh;
   align-items: center;
-  justify-content: center;
+
+  p {
+    margin: 0px;
+  }
 }
 
 .container {
   display: flex;
+  overflow-x: auto;
+  gap: 250px;
+}
+
+.subContainer {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 150px;
+
+  .btcVector {
+    top: 330px;
+    left: 200px;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 48vw;
+    
+    .heading {
+      color: white;
+      font-family: "Oswald", sans-serif;
+      font-size: 54px;
+    }
+
+    p {
+      color: white;
+      font-size: 25px;
+      font-weight: 100;
+    }
+  }
+}
+
+.transactionCont{
+  display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 100px;
 
   .heading {
     color: white;
-    margin: 0px;
     font-family: "Oswald", sans-serif;
     font-size: 54px;
   }

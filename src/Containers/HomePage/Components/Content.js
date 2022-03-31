@@ -23,4 +23,15 @@ export const content = {
     heading: "Transparency",
     info: "Because of the decentralized nature of Bitcoin's blockchain, all transactions can be transparently viewed by either having a personal node or using blockchain explorers that allow anyone to see transactions occurring live. Each node has its own copy of the chain that gets updated as fresh blocks are confirmed and added. This means that if you wanted to, you could track Bitcoin wherever it goes. ",
   },
+  6: {
+    heading: "Bitcoin vs Blockchain",
+    info1:
+      "Blockchain technology was first outlined in 1991 by Stuart Haber and W. Scott Stornetta, two researchers who wanted to implement a system where document time stamps could not be tampered with. But it wasn’t until almost two decades later, with the launch of Bitcoin in January 2009, that blockchain had its first real-world application.",
+    info2:
+      "The Bitcoin protocol is built on a blockc hain. In a research paper introducing the digital currency, Bitcoin’s pseudonymous creator, Satoshi Nakamoto, referred to it as “a new electronic cash system that’s fully peer-to-peer, with no trusted third party.” ",
+  },
+  7:{
+    heading:"How Are Blockchains Used?",
+    info:"Some companies that have already incorporated blockchain include Walmart, Pfizer, AIG, Siemens, Unilever, and a host of others. For example, IBM has created its Food Trust blockchain to trace the journey that food products take to get to their locations.Why do this? The food industry has seen countless outbreaks of E. coli, salmonella, and listeria, as well as hazardous materials being accidentally introduced to foods. In the past, it has taken weeks to find the source of these outbreaks or the cause of sickness from what people are eating. Using blockchain gives brands the ability to track a food product’s route from its origin, through each stop it makes, and finally, its delivery. If a food is found to be contaminated, then it can be traced all the way back through each stop to its origin."
+  }
 };

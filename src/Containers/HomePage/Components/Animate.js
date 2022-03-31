@@ -1,37 +1,14 @@
-// import { useRef, useEffect } from "react";
-
-// export function useHorizontalScroll() {
-//   const elRef = useRef();
-//   useEffect(() => {
-//     const el = elRef.current;
-//     if (el) {
-//       const onWheel = (e) => {
-//         if (e.deltaY == 0) return;
-//         e.preventDefault();
-//         el.scrollTo({
-//           left: el.scrollLeft + e.deltaY * 10,
-//           behavior: "smooth",
-//         });
-//       };
-//       el.addEventListener("wheel", onWheel);
-//       if (el.scrollLeft > 800) {
-//         console.log("HARHS");
-//         return () => el.removeEventListener("wheel", onWheel);
-//       }
-//     }
-//   }, []);
-//   return elRef;
-// }
-
 export function horizontalScroll() {
   const onWheel = (e) => {
     e.preventDefault();
     var container = document.getElementById("container");
     var bgImgContainer = document.getElementById("bgImgdiv");
     var infoContainer_1 = document.getElementById("infoContainer_1");
+    var infoContainer_2 = document.getElementById("infoContainer_2");
     var containerPosition = container.scrollLeft;
     var bgImgContainerPosition = bgImgContainer.scrollLeft;
     var infoContainer_1Position = infoContainer_1.scrollLeft;
+    var infoContainer_2Position = infoContainer_2.scrollLeft;
 
     var windowPosition = window.pageYOffset;
     var windowWidth = window.innerWidth;
@@ -44,9 +21,10 @@ export function horizontalScroll() {
       thresHold = 750;
       thresHold2 = 500;
     }
-    var heightThreshold1 = windowHeight/3 - 100 ;
-    var heightThreshold2 = 2*windowHeight/3 - 300;
-    var heightThreshold3 = windowHeight - 60 ;
+    var heightThreshold1 = windowHeight / 4 - 100;
+    var heightThreshold2 = (2 * windowHeight) / 4 - 300;
+    var heightThreshold3 = (3 * windowHeight) / 4 - 400;
+    // var heightThreshold4 = windowHeight;
 
     //scrollFunction
     if (windowPosition === 0) {
@@ -64,8 +42,10 @@ export function horizontalScroll() {
           behaviour: "smooth",
         });
       }
-    } else if (windowPosition > heightThreshold1 && windowPosition < heightThreshold2) {
-      // console.log(windowPosition,heightThreshold2);
+    } else if (
+      windowPosition > heightThreshold1 &&
+      windowPosition < heightThreshold2
+    ) {
       if (infoContainer_1Position === 0 && e.deltaY < 0) {
         windowScroll(e);
       } else {
@@ -77,17 +57,33 @@ export function horizontalScroll() {
           behaviour: "smooth",
         });
       }
-    } else if(windowPosition > heightThreshold2){
+    } else if (
+      windowPosition > heightThreshold2 &&
+      windowPosition < heightThreshold3
+    ) {
+      if (infoContainer_2Position === 0 && e.deltaY < 0) {
+        windowScroll(e);
+      } else {
+        if (e.deltaY > 0 && infoContainer_2Position > 1500) {
+          windowScroll(e);
+        }
+        infoContainer_2.scrollTo({
+          left: infoContainer_2Position + e.deltaY / 5,
+          behaviour: "smooth",
+        });
+      }
+      // windowScroll(e);
+    } else if (windowPosition > heightThreshold3) {
       windowScroll(e);
-    }else{
+    } else {
       windowScroll(e);
     }
   };
 
-
   //windowScrollFunction
   function windowScroll(e) {
     var windowPosition = window.pageYOffset;
+    // console.log(windowPosition);
     window.scrollTo({
       top: windowPosition + e.deltaY * 5,
       behavior: "smooth",

@@ -12,14 +12,14 @@
 .bgImgdiv {
   position: absolute;
   width: 100vw;
-  height: 310vh;
+  height: 410vh;
   top: 0px;
   z-index: -1;
   overflow-x: auto;
 
   .bgImg {
     width: 120vw;
-    height: 50%;
+    height: 39%;
   }
   .bgImg1{
     width: 120vw;
@@ -27,7 +27,7 @@
   }
   .blocksImgbg {
     position: absolute;
-    bottom: 55%;
+    bottom: 65%;
     right: -20%;
   }
 }

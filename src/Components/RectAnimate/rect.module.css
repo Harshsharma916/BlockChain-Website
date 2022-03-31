@@ -12,6 +12,14 @@
   -webkit-animation: rescale 15s infinite;
   animation: rescale 15s infinite;
 }
+.rect1_delayed {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  z-index: 2;
+  -webkit-animation: rescale1 15s infinite;
+  animation: rescale1 20s infinite;
+}
 
 .rect2 {
   position: absolute;

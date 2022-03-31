@@ -11,3 +11,14 @@ export const RectAnimate = () => {
   )
 }
 
+export const RectAnimate1 = () => {
+  return(
+    <div className={style.container}>
+      <img className={style.rect1} src={rect1}/>
+      <img className={style.rect1_delayed} src={rect1}/>
+    </div>
+  )
+}
+
+
+

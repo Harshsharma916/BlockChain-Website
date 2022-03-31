@@ -12,29 +12,7 @@ import { content } from "./Components/Content";
 import InfoPage1 from "./InfoPage-1";
 import InfoPage2 from "./InfoPage-2";
 import { RectAnimate } from "../../Components/RectAnimate";
-
-// const Content = styled.div`
-//   position: absolute;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 20px;
-//   width: 643px;
-//   left: ${(props) => props.left};
-//   top: 44%;
-// `;
-
-// const Imgdiv = styled.div`
-//   position: absolute;
-//   bottom: 0%;
-//   right: ${(props) => props.right};
-
-//   .img {
-//     z-index: 1;
-//     position: absolute;
-//     bottom: 20%;
-//     right: 6%;
-//   }
-// `;
+import InfoPage3 from "./InfoPage-3";
 
 const Homepage = () => {
   useEffect(() => {
@@ -48,14 +26,14 @@ const Homepage = () => {
       <TableContent />
       <div className={style.bgImgdiv} id="bgImgdiv">
         <img src={bgImg} className={style.bgImg} />
-        <img src={bgImg1} className={style.bgImg1}/>
+        <img src={bgImg1} className={style.bgImg1} />
         <img className={style.blocksImgbg} src={blocksBg} />
       </div>
       <div className={style.rectAnimation1}>
-        <RectAnimate/>
+        <RectAnimate />
       </div>
       <div className={style.rectAnimation2}>
-        <RectAnimate/>
+        <RectAnimate />
       </div>
       <div className={style.container1} id="container">
         <div className={style.content1}>
@@ -69,8 +47,9 @@ const Homepage = () => {
         </div>
       </div>
       {/* <div className={style.container2}> */}
-        <InfoPage1/>
-        <InfoPage2/>
+      <InfoPage1 />
+      <InfoPage2 />
+      <InfoPage3 />
       {/* </div> */}
     </div>
   );

@@ -1,13 +1,148 @@
 .wrapper {
-  height: 100vh;
   width: 100vw;
-  position: relative;
+  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  position: absolute;
+}
 
-  ::-webkit-scrollbar{
-    display: none;
+.bgImg {
+  position: absolute;
+  z-index: -1;
+}
+.card {
+  width: 400px;
+  padding: 40px;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+
+  header {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    font-family: "Oswald";
+    letter-spacing: 3px;
+  }
+  .form {
+    margin: 40px 0 20px 0;
+
+    input {
+      height: 50px;
+      font-size: 17px;
+      padding: 0 15px;
+      border: 1px solid #999;
+      width: 92%;
+    }
+    input:focus {
+      padding: 0 14px;
+      border: 2px solid #675afe;
+    }
+
   }
 }
 
+.form p {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.form :where(input, button) {
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+
+.btcDiv{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #D4088C;
+  margin: 15px 0px;
+  border-radius: 5px;
+
+  p{
+    margin: 0px !important;
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.8;
+  }
+}
+
+.drop_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0px;
+}
+
+.select_box {
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid #999;
+  position: relative;
+  gap: 10px;
+
+  img {
+    max-width: 21px;
+  }
+  p {
+    margin: 0px;
+    font-size: 16px;
+  }
+
+  .btc {
+    max-width: 35px;
+  }
+
+  .optionDiv {
+    position: absolute;
+    z-index: 1;
+    top: 42px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #999;
+    border-top: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    div {
+      width: 115px;
+      padding: 8px 0px;
+      text-align: center;
+      color: black;
+    }
+
+    div:hover {
+      cursor: pointer;
+      background-color: black;
+      opacity: 0.4;
+      color: white;
+    }
+  }
+}
+
+.select_box:hover {
+  cursor: pointer;
+}
+
+.form button {
+  margin-top: 50px;
+  height: 52px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  background: #675afe;
+  transition: 0.3s ease;
+}
+
+.form button:hover {
+  background: #4534fe;
+}
