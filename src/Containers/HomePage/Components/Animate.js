@@ -64,7 +64,7 @@ export function horizontalScroll() {
       if (infoContainer_2Position === 0 && e.deltaY < 0) {
         windowScroll(e);
       } else {
-        if (e.deltaY > 0 && infoContainer_2Position > 1500) {
+        if (e.deltaY > 0 && infoContainer_2Position > 1600) {
           windowScroll(e);
         }
         infoContainer_2.scrollTo({

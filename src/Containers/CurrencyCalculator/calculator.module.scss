@@ -4,13 +4,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.back{
   position: absolute;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  top: 80px;
+  left: 100px;
+  z-index: 2;
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.back:hover{
+  cursor: pointer;
 }
 
 .bgImg {
   position: absolute;
   z-index: -1;
 }
+
 .card {
   width: 400px;
   padding: 40px;

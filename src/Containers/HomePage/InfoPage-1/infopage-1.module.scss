@@ -5,11 +5,14 @@
   margin-left: 9%;
   // padding: 0px 9%;
   height: 100vh;
+
+  p{
+    margin: 0px;
+  }
 }
 
 .mainHeading{
   color: white;
-  margin: 0px;
   font-family: "Oswald", sans-serif;
   font-size: 54px;
 }
@@ -39,14 +42,12 @@
     
     .heading {
       width: 38vw;
-      margin: 0px;
       font-size: 48px;
       color: #d4088c;
       font-family: "Oswald", sans-serif;
     }
     
     .info {
-      margin: 0px;
       font-size: 25px;
       font-weight: 100;
       color: white;

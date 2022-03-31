@@ -32,9 +32,9 @@ const Homepage = () => {
       <div className={style.rectAnimation1}>
         <RectAnimate />
       </div>
-      <div className={style.rectAnimation2}>
+      {/* <div className={style.rectAnimation2}>
         <RectAnimate />
-      </div>
+      </div> */}
       <div className={style.container1} id="container">
         <div className={style.content1}>
           <p className={style.heading}>{content[0].heading}</p>
