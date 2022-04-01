@@ -15,8 +15,8 @@ export function horizontalScroll() {
     var windowHeight = document.body.scrollHeight;
 
     //thresHold
-    var thresHold = 700;
-    var thresHold2 = 850;
+    var thresHold = 750;
+    var thresHold2 = 880;
     if (windowWidth < 2000) {
       thresHold2 = 650;
     }
@@ -64,7 +64,7 @@ export function horizontalScroll() {
       if (infoContainer_2Position === 0 && e.deltaY < 0) {
         windowScroll(e);
       } else {
-        if (e.deltaY > 0 && infoContainer_2Position > 1600) {
+        if (e.deltaY > 0 && infoContainer_2Position > 1700) {
           windowScroll(e);
         }
         infoContainer_2.scrollTo({
