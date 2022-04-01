@@ -3,6 +3,7 @@ import Header from "../../Components/Header";
 import style from "./homepage.module.scss";
 import bgImg from "../../Assets/Images/bgImg.png";
 import bgImg1 from "../../Assets/Images/bgImg1.png";
+import bgImg2 from "../../Assets/Images/bgImg1.svg";
 import blocksImg from "../../Assets/Images/blocks.png";
 import TableContent from "../../Components/TableContent";
 import blocksBg from "../../Assets/Images/blocksBg.png";
