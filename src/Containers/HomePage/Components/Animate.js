@@ -5,7 +5,7 @@ export function horizontalScroll() {
     var bgImgContainer = document.getElementById("bgImgdiv");
     var infoContainer_1 = document.getElementById("infoContainer_1");
     var infoContainer_2 = document.getElementById("infoContainer_2");
-    var containerPosition = container.scrollLeft;
+    var containerPosition = container?.scrollLeft;
     var bgImgContainerPosition = bgImgContainer.scrollLeft;
     var infoContainer_1Position = infoContainer_1.scrollLeft;
     var infoContainer_2Position = infoContainer_2.scrollLeft;
@@ -15,7 +15,7 @@ export function horizontalScroll() {
     var windowHeight = document.body.scrollHeight;
 
     //thresHold
-    var thresHold = 740;
+    var thresHold = 700;
     var thresHold2 = 800;
     if (windowWidth < 2000) {
       thresHold = 750;

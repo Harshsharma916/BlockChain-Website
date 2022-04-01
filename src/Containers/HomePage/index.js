@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Header from "../../Components/Header";
 import style from "./homepage.module.scss";
 import bgImg from "../../Assets/Images/bgImg.png";
@@ -7,7 +7,7 @@ import blocksImg from "../../Assets/Images/blocks.png";
 import TableContent from "../../Components/TableContent";
 import blocksBg from "../../Assets/Images/blocksBg.png";
 import styled from "styled-components";
-import { horizontalScroll, useHorizontalScroll } from "./Components/Animate";
+import { horizontalScroll } from "./Components/Animate";
 import { content } from "./Components/Content";
 import InfoPage1 from "./InfoPage-1";
 import InfoPage2 from "./InfoPage-2";
