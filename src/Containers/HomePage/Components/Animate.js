@@ -15,7 +15,7 @@ export function horizontalScroll() {
     var windowHeight = document.body.scrollHeight;
 
     //thresHold
-    var thresHold = 750;
+    var thresHold = 720;
     var thresHold2 = 880;
     if (windowWidth < 2000) {
       thresHold2 = 650;

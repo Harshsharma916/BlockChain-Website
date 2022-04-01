@@ -23,7 +23,7 @@ const InfoPage1 = () => {
             <p className={style.info}>{content[3].info}</p>
           </div>
         </div>
-        <div className={style.content} style={{padding:'45px 30px'}}>
+        <div className={style.content} style={{padding:'40px 30px'}}>
           <p className={style.heading}>{content[4].heading}</p>
           <p className={style.info}>{content[4].info}</p>
         </div>
