@@ -15,13 +15,14 @@ export function horizontalScroll() {
     var windowHeight = document.body.scrollHeight;
 
     //thresHold
-    var thresHold = 1000;
-    var thresHold2 = 1000;
-    var thresHold3 = 1700;
-    if (windowWidth < 2000) {
-      thresHold = 800;
-      thresHold2 = 650;
-      thresHold3 = 1500;
+    // var thresHold = 1000;
+    // var thresHold2 = 1000;
+    // var thresHold3 = 2000;
+    var thresHold = 700;
+    var thresHold2 = 650;
+    var thresHold3 = 1500;
+    if (windowWidth < 1600) {
+      thresHold = 500;
     }
 
     const heightThreshold1 = windowHeight / 4 - 100;
@@ -30,7 +31,7 @@ export function horizontalScroll() {
     // var heightThreshold4 = windowHeight;
 
     //scroll value
-    const scrollVal = e.deltaY / 8
+    const scrollVal = e.deltaY / 15;
 
     console.log(windowWidth);
 
