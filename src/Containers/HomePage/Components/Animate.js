@@ -24,13 +24,13 @@ export function horizontalScroll() {
       thresHold3 = 1500;
     }
 
-    var heightThreshold1 = windowHeight / 4 - 100;
-    var heightThreshold2 = (2 * windowHeight) / 4 - 300;
-    var heightThreshold3 = (3 * windowHeight) / 4 - 400;
+    const heightThreshold1 = windowHeight / 4 - 100;
+    const heightThreshold2 = (2 * windowHeight) / 4 - 300;
+    const heightThreshold3 = (3 * windowHeight) / 4 - 400;
     // var heightThreshold4 = windowHeight;
 
     //scroll value
-    var scrollVal = e.deltaY / 4
+    const scrollVal = e.deltaY / 8
 
     console.log(windowWidth);
 
@@ -92,7 +92,7 @@ export function horizontalScroll() {
   function windowScroll(e) {
     var windowPosition = window.pageYOffset;
     window.scrollTo({
-      top: windowPosition + e.deltaY * 6,
+      top: windowPosition + e.deltaY * 3,
       behavior: "smooth",
     });
   }
