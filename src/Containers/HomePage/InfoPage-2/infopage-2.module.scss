@@ -1,4 +1,9 @@
-.mainContStyle {
+$info : 1.2vw;
+// $subheading: 2vw;
+$heading: 2.5vw;
+
+
+.mainCont {
   display: flex;
   padding: 0px 9%;
   height: 100vh;
@@ -13,6 +18,7 @@
   display: flex;
   overflow-x: auto;
   gap: 250px;
+  padding: 0px 5%;
 }
 
 .subContainer {
@@ -23,13 +29,6 @@
   position: relative;
   gap: 150px;
 
-  .btcVector {
-    top: 330px;
-    left: 200px;
-    position: absolute;
-    z-index: 10;
-  }
-
   .data {
     display: flex;
     flex-direction: column;
@@ -39,12 +38,12 @@
     .heading {
       color: white;
       font-family: "Oswald", sans-serif;
-      font-size: 54px;
+      font-size: $heading;
     }
 
     p {
       color: white;
-      font-size: 25px;
+      font-size: $info;
       font-weight: 100;
     }
   }
@@ -58,6 +57,22 @@
   .heading {
     color: white;
     font-family: "Oswald", sans-serif;
-    font-size: 54px;
+    font-size: $heading;
+  }
+
+  img{
+    width: 80vw;
+  }
+}
+
+.rectContainer{
+  position: relative;
+
+  .btcVector {
+    width: 25%;
+    top: 45%;
+    left: 55%;
+    position: absolute;
+    z-index: 10;
   }
 }

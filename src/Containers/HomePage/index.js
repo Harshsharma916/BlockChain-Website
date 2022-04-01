@@ -36,17 +36,20 @@ const Homepage = () => {
       {/* <div className={style.rectAnimation2}>
         <RectAnimate />
       </div> */}
-      <div className={style.container1} id="container">
-        <div className={style.content1}>
-          <p className={style.heading}>{content[0].heading}</p>
-          <p className={style.info}>{content[0].info}</p>
-        </div>
-        <img className={style.blocksImg} src={blocksImg} />
-        <div className={style.content2}>
-          <p className={style.heading}>{content[1].heading}</p>
-          <p className={style.info}>{content[1].info}</p>
+      <div className={style.mainCont}>
+        <div className={style.container} id="container">
+          <div className={style.content1}>
+            <p className={style.heading}>{content[0].heading}</p>
+            <p className={style.info}>{content[0].info}</p>
+          </div>
+          <img className={style.blocksImg} src={blocksImg} />
+          <div className={style.content2}>
+            <p className={style.heading}>{content[1].heading}</p>
+            <p className={style.info}>{content[1].info}</p>
+          </div>
         </div>
       </div>
+
       {/* <div className={style.container2}> */}
       <InfoPage1 />
       <InfoPage2 />

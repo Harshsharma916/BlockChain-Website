@@ -9,8 +9,11 @@ const InfoPage1 = () => {
     horizontalScroll();
   },[])
 
+  const style1 = {padding:'40px 30px'};
+  const style2 = {padding:'120px 30px'};
+
   return (
-    <div className={style.mainContStyle}>
+    <div className={style.mainCont}>
       <p className={style.mainHeading}>How does a Blockchain work?</p>
       <div className={style.container} id="infoContainer_1">
         <div className={style.subContainer}>
@@ -23,11 +26,11 @@ const InfoPage1 = () => {
             <p className={style.info}>{content[3].info}</p>
           </div>
         </div>
-        <div className={style.content} style={{padding:'40px 30px'}}>
+        <div className={style.content}>
           <p className={style.heading}>{content[4].heading}</p>
           <p className={style.info}>{content[4].info}</p>
         </div>
-        <div className={style.content} style={{padding:'120px 30px'}}>
+        <div className={style.content}>
           <p className={style.heading}>{content[5].heading}</p>
           <p className={style.info}>{content[5].info}</p>
         </div>

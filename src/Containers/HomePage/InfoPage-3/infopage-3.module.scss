@@ -1,4 +1,8 @@
-.mainContStyle {
+$info : 1.2vw;
+// $subheading: 2vw;
+$heading: 2.5vw;
+
+.mainCont {
   display: flex;
   padding: 0px 9%;
   // width: 100%;
@@ -20,12 +24,12 @@
   .heading {
     color: white;
     font-family: "Oswald", sans-serif;
-    font-size: 54px;
+    font-size: $heading;
   }
 
   p {
     color: white;
-    font-size: 25px;
+    font-size: $info;
     font-weight: 100;
     line-height: 150%;
   }  

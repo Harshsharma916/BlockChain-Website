@@ -12,7 +12,7 @@ const InfoPage2 = () => {
   },[]);
 
   return (
-    <div className={style.mainContStyle}>
+    <div className={style.mainCont}>
       <div className={style.container} id="infoContainer_2">
         <div className={style.subContainer}>
           <div className={style.rectContainer}>

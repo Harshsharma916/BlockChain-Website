@@ -4,7 +4,7 @@ import groupVector from "../../../Assets/Images/groupVector.png";
 
 const InfoPage3 = () => {
   return (
-    <div className={style.mainContStyle}>
+    <div className={style.mainCont}>
       <div className={style.container}>
         <p className={style.heading}>{content[7].heading}</p>
         <p>{content[7].info}</p>

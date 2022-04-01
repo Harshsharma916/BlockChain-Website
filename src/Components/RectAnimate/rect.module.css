@@ -1,7 +1,7 @@
 .container {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 20vw;
+  height: 20vw;
 }
 
 .rect1 {
@@ -11,6 +11,7 @@
   z-index: 3;
   -webkit-animation: rescale 15s infinite;
   animation: rescale 15s infinite;
+  width: 80%;
 }
 .rect1_delayed {
   position: absolute;
@@ -19,6 +20,7 @@
   z-index: 2;
   -webkit-animation: rescale1 15s infinite;
   animation: rescale1 20s infinite;
+  width: 80%;
 }
 
 .rect2 {

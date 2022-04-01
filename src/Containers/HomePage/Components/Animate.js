@@ -15,16 +15,24 @@ export function horizontalScroll() {
     var windowHeight = document.body.scrollHeight;
 
     //thresHold
-    var thresHold = 720;
-    var thresHold2 = 880;
+    var thresHold = 1000;
+    var thresHold2 = 1000;
+    var thresHold3 = 1700;
     if (windowWidth < 2000) {
+      thresHold = 800;
       thresHold2 = 650;
+      thresHold3 = 1500;
     }
 
     var heightThreshold1 = windowHeight / 4 - 100;
     var heightThreshold2 = (2 * windowHeight) / 4 - 300;
     var heightThreshold3 = (3 * windowHeight) / 4 - 400;
     // var heightThreshold4 = windowHeight;
+
+    //scroll value
+    var scrollVal = e.deltaY / 4
+
+    console.log(windowWidth);
 
     //scrollFunction
     if (windowPosition === 0) {
@@ -33,12 +41,12 @@ export function horizontalScroll() {
       } else {
         container.scrollTo({
           top: 0,
-          left: containerPosition + e.deltaY / 5,
+          left: containerPosition + scrollVal,
           behaviour: "smooth",
         });
         bgImgContainer.scrollTo({
           top: 0,
-          left: bgImgContainerPosition + e.deltaY / 5,
+          left: bgImgContainerPosition + scrollVal,
           behaviour: "smooth",
         });
       }
@@ -53,7 +61,7 @@ export function horizontalScroll() {
           windowScroll(e);
         }
         infoContainer_1.scrollTo({
-          left: infoContainer_1Position + e.deltaY / 5,
+          left: infoContainer_1Position + scrollVal,
           behaviour: "smooth",
         });
       }
@@ -64,11 +72,11 @@ export function horizontalScroll() {
       if (infoContainer_2Position === 0 && e.deltaY < 0) {
         windowScroll(e);
       } else {
-        if (e.deltaY > 0 && infoContainer_2Position > 1700) {
+        if (e.deltaY > 0 && infoContainer_2Position > thresHold3) {
           windowScroll(e);
         }
         infoContainer_2.scrollTo({
-          left: infoContainer_2Position + e.deltaY / 5,
+          left: infoContainer_2Position + scrollVal,
           behaviour: "smooth",
         });
       }
@@ -83,9 +91,8 @@ export function horizontalScroll() {
   //windowScrollFunction
   function windowScroll(e) {
     var windowPosition = window.pageYOffset;
-    // console.log(windowPosition);
     window.scrollTo({
-      top: windowPosition + e.deltaY * 5,
+      top: windowPosition + e.deltaY * 6,
       behavior: "smooth",
     });
   }
