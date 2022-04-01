@@ -19,7 +19,7 @@ export function horizontalScroll() {
     // var thresHold2 = 1000;
     // var thresHold3 = 2000;
     var thresHold = 700;
-    var thresHold2 = 650;
+    var thresHold2 = 700;
     var thresHold3 = 1500;
     if (windowWidth < 1600) {
       thresHold = 500;
