@@ -22,7 +22,7 @@ export function horizontalScroll() {
     var thresHold2 = 700;
     var thresHold3 = 1500;
     if (windowWidth < 1600) {
-      thresHold = 500;
+      thresHold = 600;
     }
 
     const heightThreshold1 = windowHeight / 4 - 100;
