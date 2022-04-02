@@ -93,7 +93,7 @@ export function horizontalScroll() {
   function windowScroll(e) {
     var windowPosition = window.pageYOffset;
     window.scrollTo({
-      top: windowPosition + e.deltaY * 5,
+      top: windowPosition + e.deltaY * 3,
       behavior: "smooth",
     });
   }
